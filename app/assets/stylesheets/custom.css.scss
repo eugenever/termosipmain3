@@ -858,7 +858,7 @@ body {
   background-image: asset_url("blue.png");
   background-repeat: repeat;
   margin-top: 0px;
-  padding-top: 50px;
+  //padding-top: 50px;
 }
 
 section {
@@ -1653,6 +1653,10 @@ HR {
     }
 }
 
+.doten {
+  border-bottom: 1px dotted;
+}
+
 .doctors {
   .thumbnail {
     //background-color: inherit;
@@ -1854,4 +1858,137 @@ div.code_container {
 
 #mainjumbo {
   background-image: asset_url("construction1.jpg");
+}
+
+.pr1 {
+  background: asset_url("pic1.png") no-repeat left;
+  padding-left: 35px;
+  height: 50px;
+  text-transform: uppercase;
+  width: 200px;
+  font: normal 0.9em "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #4e5c6e;
+  font-style: italic;
+  text-align: center;
+  margin:0 auto;
+  p {
+    padding-top: 18px;
+  }
+}
+
+.pr2 {
+  background: asset_url("pic2_.png") no-repeat left;
+  padding-left: 35px;
+  height: 50px;
+  text-transform: uppercase;
+  width: 200px;
+  font: normal 0.9em "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #4e5c6e;
+  font-style: italic;
+  text-align: center;
+  margin:0 auto;
+  p {
+    padding-top: 18px;
+  }
+}
+
+.pr3 {
+  background: asset_url("pic3.png") no-repeat left;
+  padding-left: 35px;
+  height: 50px;
+  text-transform: uppercase;
+  width: 200px;
+  font: normal 0.9em "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #4e5c6e;
+  font-style: italic;
+  text-align: center;
+  margin:0 auto;
+  p {
+    padding-top: 18px;
+  }
+}
+
+.bttn {
+  border-radius: 15px 0px 0px 15px;
+  -moz-border-radius: 15px 0px 0px 15px;
+  -webkit-border-radius: 15px 0px 0px 15px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border: 1px solid #fff;
+  font-family: "Trebuchet MS", "Helvetica CY", sans-serif;
+  font-style: italic;
+  font-size: 0.9em;
+  text-shadow: 0px 1px #99ffff;
+  color: #4e5c6e;
+  padding: 10px;
+}
+
+//боковое меню
+ul.secondary-menu {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+ul.secondary-menu li {
+  background: #333333;//rgba(0, 0, 0, 0.8);//#4e5c6e;//#333333;
+  list-style: none;
+  position: relative;
+  border-radius: 10px;
+  //margin-bottom: 3px;
+  //float: left;
+  display: inline-block;
+  margin: 10px;
+}
+
+ul.secondary-menu li a {
+  padding: 10px;
+  display: block;
+  border-top: 1px;
+  border-right: 1px;
+  //font-size: 12px;
+  //font-family: "Trebuchet MS", "Helvetica CY", sans-serif;//Times, serif;
+  //font-weight: normal;
+  font: normal 0.9em "Trebuchet MS", Arial, Helvetica, sans-serif;
+  //font-style: italic;
+  color:  #ddd;
+  text-decoration: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+ul.secondary-menu li a:hover,
+ul.secondary-menu li:hover > a {
+  background: #4e5c6e;//#3483a5;
+  border-radius: 10px;
+}
+
+ul.secondary-menu li ul,
+ul.secondary-menu li ul.sub-menu li ul {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+ul.secondary-menu li:hover ul,
+ul.secondary-menu li ul.sub-menu li:hover ul {
+  left: 200px;
+  top: 0px;
+  width: 200px;
+  display: block;
+  position: absolute;
+  z-index: 100;
+}
+
+.menu-all {
+  margin: 0 auto; /* центрирование обертки! меню */
+  text-align: center;
+  margin-bottom: 15px;
 }
