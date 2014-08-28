@@ -1,0 +1,36 @@
+<footer class="footer" id="footer1">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12" id="footbc">
+        <p><%= link_to "Главная", root_path %>&nbsp&nbsp&nbsp<%= link_to "О клинике", "#" %>&nbsp&nbsp&nbsp<%= link_to "Врачи", "#" %>&nbsp&nbsp&nbsp<%= link_to "Прайс-лист", "#" %>&nbsp&nbsp&nbsp<%= link_to "Контакты", "#" %></p>
+      </div>
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <p>Лицензии на осуществление медицинской деятельности: № ЛО-23-01-003528 от 22.03.2001 и № 21-03-00245 от 12.03.2005</p>
+      </div>
+
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <p>«ЛОР КЛИНИКА» Краснодар</p>
+      </div> 
+      <div class="col-md-4 col-sm-4 col-xs-12" id="footcontact">        
+        <p>г. Краснодар, ул. Захарова, 59</p>                       
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <p>(861) 268-87-00, 268-78-73</p>
+      </div>
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <p>© 2007-2014 Все права защищены</p>
+      </div>
+  </div>
+</div>
+
+  
+
+  <% if Rails.env.production? %>  
+  <!-- Yandex.Metrika counter -->
+  
+  <!-- /Yandex.Metrika counter -->
+  <% end %>
+
+</footer>
