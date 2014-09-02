@@ -30,8 +30,8 @@ before 'deploy:setup', 'rvm:install_rvm', 'rvm:install_ruby' # интеграц�
 after 'deploy:update_code', :roles => :app do
   #run "rm -f #{current_release}/config/database.yml"
   #run "ln -s #{deploy_to}/shared/config/database.yml #{current_release}/config/database.yml"
-  run " cd #{release_path} && RAILS_ENV=production bundle exec rake sitemap:generate"
-  run " cd #{release_path} &&  RAILS_ENV=production bundle exec rake sitemap:symlink"
+  #run " cd #{release_path} && RAILS_ENV=production bundle exec rake sitemap:generate"
+  #run " cd #{release_path} &&  RAILS_ENV=production bundle exec rake sitemap:symlink"
 end
 
 namespace :symlinks do
