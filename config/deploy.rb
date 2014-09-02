@@ -1,7 +1,7 @@
 require 'rvm/capistrano' # Для работы rvm
 require 'bundler/capistrano' # Для работы bundler. При изменении гемов bundler автоматически обновит все гемы на сервере, чтобы они в точности соответствовали гемам разработчика. 
 
-set :rvm_ruby_string, '2.0.0@lorcenter' # Это указание на то, какой Ruby интерпретатор мы будем использовать.
+set :rvm_ruby_string, '2.0.0@termosipmain3' # Это указание на то, какой Ruby интерпретатор мы будем использовать.
 
 set :application, "termosip3"
 set :rails_env, "production"
