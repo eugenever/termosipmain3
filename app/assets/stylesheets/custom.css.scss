@@ -1096,9 +1096,9 @@ input {
   li {
     overflow: auto;
     padding: 10px 0;
-    border-top: 1px solid $gray-lighter;
+    //border-top: 1px solid $gray-lighter;
     &:last-child {
-      border-bottom: 1px solid $gray-lighter;
+      //border-bottom: 1px solid $gray-lighter;
     }
   }
 }
@@ -2067,4 +2067,62 @@ ul.secondary-menu li ul.sub-menu li:hover ul {
 
 .img-center {margin:0 auto;}
 
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    //border-top: 1px solid #eeeeee;
+    &:last-child {
+      //border-bottom: 1px solid #eeeeee;
+    }
+  }
+}
 
+//стилизация блока
+#secondary {
+  background: white;
+  border: 1px solid #DDD;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 1px 0 #9a9a9a;
+  -webkit-box-shadow: 0 1px 0 #9A9A9A;
+  box-shadow: 0 1px 0 #9A9A9A;
+  margin: 0 0 10px;
+  padding: 10px 25px 10px 25px;
+  text-shadow: 0 1px 0 white;
+  position: relative;
+  z-index: 0;
+}
+
+.widget::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  border: 1px dashed #CCC;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+  -moz-box-shadow: 0 0 0 1px #fff;
+  -webkit-box-shadow: 0 0 0 1px white;
+  box-shadow: 0 0 0 1px white;
+}
+
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+  .alert {
+    margin-bottom: 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
+}

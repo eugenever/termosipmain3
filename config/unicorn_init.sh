@@ -12,7 +12,7 @@ set -e
  
 # Feel free to change any of the following variables for your app:
 TIMEOUT=${TIMEOUT-60}
-APP_ROOT=/srv/lorcenter
+APP_ROOT=/srv/termosip3
 PID=$APP_ROOT/shared/pids/unicorn.pid
 CMD="cd $APP_ROOT/current; bundle exec unicorn_rails -c $APP_ROOT/current/config/unicorn.rb -E production -D"
 AS_USER=depuser
