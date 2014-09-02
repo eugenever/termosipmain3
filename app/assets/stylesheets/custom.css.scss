@@ -2126,3 +2126,9 @@ ul.secondary-menu li ul.sub-menu li:hover ul {
   @extend .control-group;
   @extend .error;
 }
+
+h2, h3 {
+  span {
+    color: #557db5;
+  }
+}

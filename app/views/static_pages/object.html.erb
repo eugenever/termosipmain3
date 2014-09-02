@@ -1,0 +1,76 @@
+<% provide(:title, 'Наши объекты') %>
+<% provide(:meta_keywords, '') %>
+<% provide(:meta_description, '') %>
+
+<div class="container">
+  <div class="col-md-12">
+    <h2>Фотографии наших объектов</h2>
+    <br>
+    <h3>Фасадные термопанели с клинкерной плиткой и пенополиуретаном</h3>
+    <br>
+    <h3><span>Частные дома в г. Можга (6 фото)</span></h3>
+    <div id="owl-example" class="owl-carousel owl-theme">        
+        <div class="item"><%= link_to image_tag("mozhga1.jpg", alt: "HOUSE", width: "99%", class: "imgd", style: "max-height: 250px;"), '/images/mozhga1.jpg', target: "_blank" %></div>
+        <div class="item"><%= link_to image_tag("mozhga2.jpg", alt: "HOUSE", width: "99%", class: "imgd", style: "max-height: 250px;"), '/images/mozhga2.jpg', target: "_blank" %></div>
+        <div class="item"><%= link_to image_tag("mozhga3.jpg", alt: "HOUSE", width: "99%", class: "imgd", style: "max-height: 250px;"), '/images/mozhga3.jpg', target: "_blank" %></div>
+        <div class="item"><%= link_to image_tag("mozhga4.jpg", alt: "HOUSE", width: "99%", class: "imgd", style: "max-height: 250px;"), '/images/mozhga4.jpg', target: "_blank" %></div>
+        <div class="item"><%= link_to image_tag("mozhga5.jpg", alt: "HOUSE", width: "99%", class: "imgd", style: "max-height: 250px;"), '/images/mozhga5.jpg', target: "_blank" %></div>
+        <div class="item"><%= link_to image_tag("mozhga6.jpg", alt: "HOUSE", width: "99%", class: "imgd", style: "max-height: 250px;"), '/images/mozhga6.jpg', target: "_blank" %></div>        
+      </div>
+
+      <br>
+
+      <h3><span>Частный дом в д. Старая Монья (2 фото)</span></h3>
+      <p style="text-align:center;"><%= link_to image_tag("house 8.jpg", alt: "HOUSE 1", class: "imgd", style: "max-height: 250px;"), '/images/house 8.jpg', target: "_blank" %> <%= link_to image_tag("house 9.jpg", alt: "HOUSE 2", class: "imgd", style: "max-height: 250px;"), '/images/house 9.jpg', target: "_blank" %></p>
+
+      <script type="text/javascript">
+        $(document).ready(function() {
+
+          $("#owl-example").owlCarousel({
+            items : 3,
+            navigation: true,
+            navigationText: [
+            "<i class='glyphicon glyphicon-chevron-left icon-white'></i>",
+            "<i class='glyphicon glyphicon-chevron-right icon-white'></i>"
+            ],
+            itemsDesktop: [1199,3],
+            itemsDesktopSmall: [979,2],
+            itemsTablet: [768,2]
+          });
+
+        });
+      </script>
+
+      <hr>
+
+      <h2>СИП панели</h2>
+      <br>
+      <h3><span>Домик в пригороде Ижевска (4 фото)</span></h3>
+      <div id="owl-example-sip" class="owl-carousel owl-theme">        
+        <div class="item"><%= link_to image_tag("sip1.jpg", alt: "SIP", width: "99%", class: "imgd", style: "max-height: 250px;"), '/images/sip1.jpg', target: "_blank" %></div>
+        <div class="item"><%= link_to image_tag("sip2.jpg", alt: "SIP", width: "99%", class: "imgd", style: "max-height: 250px;"), '/images/sip2.jpg', target: "_blank" %></div>
+        <div class="item"><%= link_to image_tag("sip3.jpg", alt: "SIP", width: "99%", class: "imgd", style: "max-height: 250px;"), '/images/sip3.jpg', target: "_blank" %></div>
+        <div class="item"><%= link_to image_tag("sip4.jpg", alt: "SIP", width: "99%", class: "imgd", style: "max-height: 250px;"), '/images/sip4.jpg', target: "_blank" %></div>        
+      </div>
+
+      <br>
+
+      <script type="text/javascript">
+        $(document).ready(function() {
+
+          $("#owl-example-sip").owlCarousel({
+            items : 3,
+            navigation: true,
+            navigationText: [
+            "<i class='glyphicon glyphicon-chevron-left icon-white'></i>",
+            "<i class='glyphicon glyphicon-chevron-right icon-white'></i>"
+            ],
+            itemsDesktop: [1199,3],
+            itemsDesktopSmall: [979,2],
+            itemsTablet: [768,2]
+          });         
+
+        });
+      </script>
+  </div>
+</div>
