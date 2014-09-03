@@ -1138,7 +1138,7 @@ ul.secondary-menu li a {
 
 ul.secondary-menu li a:hover,
 ul.secondary-menu li:hover > a {
-  background: #3483a5;
+  background: #4e5c6e;
   border-radius: 10px;
 }
 
@@ -2130,5 +2130,11 @@ ul.secondary-menu li ul.sub-menu li:hover ul {
 h2, h3 {
   span {
     color: #557db5;
+  }
+}
+
+.klinker {
+  th {
+    text-align: center;
   }
 }
